@@ -2,14 +2,14 @@ Rails.application.routes.draw do
 
   root 'products#add'
 
-  get 'products/add', to: 'products#new'
+
+  get 'products/add', to: 'products#add'
+
 
   post 'products/add', to: 'products#create'
 
 
-
-
-
+  get '/products', to: 'products#index'
 
 
 
